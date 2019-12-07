@@ -1,0 +1,39 @@
+﻿Build started 2015-05-17 오후 8:49:47.
+     1>Project "C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\date class\date class.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt implement_mydate.cpp test1.cpp
+         test1.cpp
+         implement_mydate.cpp
+     1>c:\users\오 예진\documents\visual studio 2013\projects\date class\date class\implement_mydate.cpp(336): warning C4101: 'n' : unreferenced local variable
+     1>c:\users\오 예진\documents\visual studio 2013\projects\date class\date class\implement_mydate.cpp(336): warning C4101: 'i' : unreferenced local variable
+     1>c:\users\오 예진\documents\visual studio 2013\projects\date class\date class\implement_mydate.cpp(336): warning C4101: 'j' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\Debug\date class.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\Debug\date class.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\Debug\date class.lib" /MACHINE:X86 Debug\implement_mydate.obj
+         Debug\test1.obj
+     1>test1.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class myDate const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVmyDate@@@Z) referenced in function "void __cdecl testDateFromFile(void)" (?testDateFromFile@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class myDate const &)" (??5@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV?$basic_istream@DU?$char_traits@D@std@@@1@ABVmyDate@@@Z) referenced in function "void __cdecl testDateFromFile(void)" (?testDateFromFile@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "class myDate __cdecl operator+(int,class myDate const &)" (??H@YA?AVmyDate@@HABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: __thiscall myDate::myDate(class myDate const &)" (??0myDate@@QAE@ABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: int __thiscall myDate::operator-(class myDate const &)const " (??GmyDate@@QBEHABV0@@Z) referenced in function "void __cdecl testDateFromFile(void)" (?testDateFromFile@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate __thiscall myDate::operator+(int)const " (??HmyDate@@QBE?AV0@H@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate __thiscall myDate::operator-(int)const " (??GmyDate@@QBE?AV0@H@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate & __thiscall myDate::operator++(void)" (??EmyDate@@QAEAAV0@XZ) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate & __thiscall myDate::operator--(void)" (??FmyDate@@QAEAAV0@XZ) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate __thiscall myDate::operator++(int)" (??EmyDate@@QAE?AV0@H@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate __thiscall myDate::operator--(int)" (??FmyDate@@QAE?AV0@H@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate & __thiscall myDate::operator=(class myDate const &)" (??4myDate@@QAEAAV0@ABV0@@Z) referenced in function "void __cdecl swap(class myDate &,class myDate &)" (?swap@@YAXAAVmyDate@@0@Z)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: class myDate & __thiscall myDate::operator-=(int)" (??ZmyDate@@QAEAAV0@H@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator>(class myDate const &)const " (??OmyDate@@QBE_NABV0@@Z) referenced in function "class myDate const & __cdecl getMinDate(class myDate const * const,int)" (?getMinDate@@YAABVmyDate@@QBV1@H@Z)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator>=(class myDate const &)const " (??PmyDate@@QBE_NABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator<(class myDate const &)const " (??MmyDate@@QBE_NABV0@@Z) referenced in function "class myDate const & __cdecl getMaxDate(class myDate const * const,int)" (?getMaxDate@@YAABVmyDate@@QBV1@H@Z)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator<=(class myDate const &)const " (??NmyDate@@QBE_NABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator==(class myDate const &)const " (??8myDate@@QBE_NABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "public: bool __thiscall myDate::operator!=(class myDate const &)const " (??9myDate@@QBE_NABV0@@Z) referenced in function "void __cdecl testSimpleCase(void)" (?testSimpleCase@@YAXXZ)
+     1>test1.obj : error LNK2019: unresolved external symbol "void __cdecl testDataFromFile(void)" (?testDataFromFile@@YAXXZ) referenced in function _main
+     1>C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\Debug\date class.exe : fatal error LNK1120: 20 unresolved externals
+     1>Done Building Project "C:\Users\오 예진\Documents\Visual Studio 2013\Projects\date class\date class\date class.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.34
